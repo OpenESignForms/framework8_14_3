@@ -42,7 +42,7 @@ For IntelliJ IDEA users, see [IntelliJ IDEA Quick Setup](#intellij-idea-quick-se
       * Accept the local destination as Directory */Users/yozons/git/framework8_14_3*, initial branch *master* and remote name *origin* and uncheck *Import all existing Eclipse projects after clone finishes* and click Finish.
     * If using Windows, you might also want to add these Git settings: `core.autocrlf=false` and `core.fileMode=false`. You can do this in Eclipse by right-clicking the repository in Git perspective, clicking *Properties*, then *Add Entry...* and using key `core.autocrlf` and value `false` etc.
     * If too long file paths become a problem you may also need `core.longpaths=true`.
-1. Switch to the view.
+1. Switch to the Java EE perspective so see the Project Explorer.
 1. Import the project into Eclipse as a Maven project. Use *File* -> *Import* -> *Maven* -> *Existing Maven Projects*.
 1. Select the *framework* folder (where you cloned the project). Yozons used */Users/yozons/git/framework8_14_3*
     * It is not necessary to import all the modules, but it is recommended to include at least the root module, `vaadin-uitest` module, and any modules you may wish to make changes to. You can import more modules when needed by repeating these last steps.
@@ -128,7 +128,7 @@ After that is done, you should have 9 of 28 save actions activated and listed as
 ### Getting started
 
 Run <code>install</code> maven goal for the project root to get started.
-In Eclipse this is done by right-clicking on the project root in Project Explorer and choosing *Run As* -> *Maven Build...*. If you choose to skip tests you may need to run the <code>install</code> maven goal for `vaadin-uitest` project separately.
+In Eclipse this is done by right-clicking on the project root in Project Explorer and choosing *Run As* -> *Maven Build...* . If you choose to skip tests you may need to run the <code>install</code> maven goal for `vaadin-uitest` project separately.
 * Note that the first compilation takes a while to finish as Maven downloads dependencies used in the projects.
 
 Now the project should compile without further configuration.
