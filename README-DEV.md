@@ -1,5 +1,7 @@
 # Development Instructions
 
+*Updated by Yozons to reflect it's build of the 8.14.3 cloned repository on Eclipse 2022-06 (4.24.0)*
+
 To contribute, first refer to [Contributing Code](https://github.com/vaadin/framework/blob/master/CONTRIBUTING.md)
 for general instructions and requirements for contributing code to the Vaadin framework.
 
@@ -25,7 +27,7 @@ For IntelliJ IDEA users, see [IntelliJ IDEA Quick Setup](#intellij-idea-quick-se
 
 1. Decide were you would like your Eclipse workspace to be located.
     * This project contains multiple modules and uses configurations that might clash with your existing projects, using a separate workspace is recommended.
-    * Eclipse Oxygen is recommended, different versions may treat formatting rules differently.
+    * Eclipse Oxygen is recommended, different versions may treat formatting rules differently.  Yozons used Eclipse 2022-06 (4.24.0).
     * If you are using Windows, you may wish to keep the workspace path reasonably short (e.g. `C:\dev\<workspaceName>`) to avoid problems with too long file paths.
 1. Start Eclipse with your chosen workspace and set up [workspace preferences](#workspace-preferences).
 1. Clone the repository within your selected workspace using Eclipse's clone wizard, using your favorite Git tool, or in command-line running
