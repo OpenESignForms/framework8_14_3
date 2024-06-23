@@ -1,6 +1,7 @@
 # Development Instructions
 
-*Updated by Yozons to reflect it's build of the 8.14.3 cloned repository on Eclipse 2022-06 (4.24.0)*
+*Updated by Yozons to reflect it's build of the 8.14.3 cloned repository using Eclipse 2022-06 (4.24.0),7 Java 1.8.0_261 for compiling
+and JDK17 for the runtime.*
 
 To contribute, first refer to [Contributing Code](https://github.com/vaadin/framework/blob/master/CONTRIBUTING.md)
 for general instructions and requirements for contributing code to the Vaadin framework.
@@ -25,19 +26,27 @@ Despite our best efforts the formatting options aren't always entirely consisten
 
 For IntelliJ IDEA users, see [IntelliJ IDEA Quick Setup](#intellij-idea-quick-setup).
 
-1. Decide were you would like your Eclipse workspace to be located.
-    * This project contains multiple modules and uses configurations that might clash with your existing projects, using a separate workspace is recommended.
-    * Eclipse Oxygen is recommended, different versions may treat formatting rules differently.  Yozons used Eclipse 2022-06 (4.24.0).
+1. Decide were you would like your Eclipse workspace to be located. 
+    * This project contains multiple modules and uses configurations that might clash with your existing projects, using a separate workspace is recommended. *Yozons is using /Users/yozons/Documents/YozonsVaadin8Framework*
+    * Eclipse Oxygen is recommended, different versions may treat formatting rules differently.  *Yozons is using Eclipse 2022-06 (4.24.0).*
     * If you are using Windows, you may wish to keep the workspace path reasonably short (e.g. `C:\dev\<workspaceName>`) to avoid problems with too long file paths.
 1. Start Eclipse with your chosen workspace and set up [workspace preferences](#workspace-preferences).
 1. Clone the repository within your selected workspace using Eclipse's clone wizard, using your favorite Git tool, or in command-line running
-<code>git clone https://github.com/vaadin/framework.git</code> command.
-    * Eclipse's clone wizard can be found within Git perspective (*Window* -> *Perspectives* -> *Open Perspective* -> *Git*). _Only_ clone the project at this stage, do not let the clone wizard import projects as well.
+<code>git clone https://github.com/OpenEsignForms/framework8_14_3.git</code> command.
+    * Eclipse's clone wizard can be found within Git perspective (*Window* -> *Perspectives* -> *Open Perspective* -> *Git*).  If *Git* is not shown, select *Other* and then choose *Git. _Only_ clone the project at this stage, do not let the clone wizard import projects as well.
+      * Click *Clone a Git repository*
+      * Select repository source *Clone URI* and click Next.
+      * Enter *https://github.com/OpenEsignForms/framework8_14_3.git* in the URI.  It should show the host as *github.com* and the repository path
+        as */OpenESignForms/framework8_14_3.git* and protocol as *https* and for Yozons, we entered our GitHub user and password.  Click Next.
+      * Click Next and leave all branches checked.
+      * Accept the local destination as Directory */Users/yozons/git/framework8_14_3*, initial branch *master* and remote name *origin* and uncheck *Import all existing Eclipse projects after clone finishes* and click Finish.
     * If using Windows, you might also want to add these Git settings: `core.autocrlf=false` and `core.fileMode=false`. You can do this in Eclipse by right-clicking the repository in Git perspective, clicking *Properties*, then *Add Entry...* and using key `core.autocrlf` and value `false` etc.
     * If too long file paths become a problem you may also need `core.longpaths=true`.
+1. Switch to the view.
 1. Import the project into Eclipse as a Maven project. Use *File* -> *Import* -> *Maven* -> *Existing Maven Projects*.
-1. Select the *framework* folder (where you cloned the project).
+1. Select the *framework* folder (where you cloned the project). Yozons used */Users/yozons/git/framework8_14_3*
     * It is not necessary to import all the modules, but it is recommended to include at least the root module, `vaadin-uitest` module, and any modules you may wish to make changes to. You can import more modules when needed by repeating these last steps.
+    * Yozons kept all projects checked and the 'Add project(s) to working set' was set to *vaadin-root*.
 1. Click “Finish” to complete the import of Vaadin Framework.
 
 ### Workspace preferences
@@ -46,26 +55,26 @@ The following preferences need to be set to keep the project consistent. You nee
 
 #### General
 
-1. Open *Window* -> *Preferences* (Windows) or *Eclipse* -> *Preferences* (Mac)
+1. Open *Window* -> *Preferences* (Windows) or *Eclipse* -> *Settings* that opens Preferences (Mac)
 1. Go to *General* -> *Workspace*
-   - Set *Text file encoding* to *UTF-8*
-   - Set *New text file line delimiter* to *Unix*
+   - Set *Text file encoding* to *UTF-8*   *For Yozons, this is Default (UTF-8) selected.*
+   - Set *New text file line delimiter* to *Unix*   *This was already the default.*
 1. Go to *XML* -> *XML Files* -> *Editor*
    - Ensure the settings are follows:
-     - Line width: 72
-     - Format comments: true
-     - Join lines: true
-     - Insert whitespace before closing empty end-tags: true
+     - Line width: 72   *This was already the default.*
+     - Format comments: true  *This was already the default.*
+     - Join lines: true *This was already the default.*
+     - Insert whitespace before closing empty end-tags: true  *This was already the default.*
      - Indent-using spaces: true
      - Indentation size: 4
-1. Go to *Java* -> *Compiler* -> *Errors*
+1. Go to *Java* -> *Compiler* -> *Errors/Warnings*
    - Switch *Serializable class without serialVersionUID* to *Ignore*
 1. Go to *Java* -> *Installed JREs*
    - Select a Java 8 JDK as the default
 
 #### Configuration files
 
-1. Open *Window* -> *Preferences* (Windows) or *Eclipse* -> *Preferences* (Mac)
+1. Open *Window* -> *Preferences* (Windows) or *Eclipse* -> *Settings* for Preferences (Mac)
 1. Go to *Java* -> *Code Style* -> *Clean Up*
    - Import [eclipse/VaadinCleanup.xml](/eclipse/VaadinCleanup.xml)
 1. Go to *Java* -> *Code Style* -> *Formatter*
@@ -73,7 +82,7 @@ The following preferences need to be set to keep the project consistent. You nee
 
 #### Save actions
 
-1. Open *Window* -> *Preferences* (Windows) or *Eclipse* -> *Preferences* (Mac)
+1. Open *Window* -> *Preferences* (Windows) or *Eclipse* -> *Settings* to open Preferences (Mac)
 1. Go to *Java* -> *Editor* -> *Save Actions*
    - Check *Perform the selected actions on save*
       - Check *Format source code*
@@ -96,7 +105,7 @@ The following preferences need to be set to keep the project consistent. You nee
           - Select *Only if necessary*
         - Uncheck everything else
      1. In tab *Missing Code*
-        - Check *Add missing Annotations*
+        - Check *Add missing Annotations*  *This was the default.*
           - Check *'@Override'*
             - Check *Implementations of interface methods (1.6 or higher)*
           - Check *'@Deprecated'*
