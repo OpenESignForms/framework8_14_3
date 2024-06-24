@@ -135,6 +135,7 @@ Now the project should compile without further configuration.
 
 ### Compiling the default widgetset and themes
 
+* Yozons update: Use Maven in Eclipse to set the version to build as. For example, for the next release from the Vaadin official release of 8.14.3 to the Yozons patch build to 8.14.4, do *Run As* -> *Maven Build...* using the goal of `versions:set`, check `Skip Tests`, and add the parameters `newVersion=8.14.4` and `processAllModules=true`.
 * Compile the default widgetset by running <code>install</code> maven goal in `vaadin-client-compiled` module root.
 In Eclipse this is done by right clicking on `vaadin-client-compiled` project in Project Explorer and choosing *Run As* -> *Maven Build...*.
 You don't need to do this separately if you have already run <code>install</code> for the root project after your latest changes. 
