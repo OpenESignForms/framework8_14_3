@@ -3,6 +3,8 @@
 *Updated by Yozons to reflect it's build of the 8.14.3 cloned repository using Eclipse 2022-06 (4.24.0),7 Java 1.8.0_261 for compiling
 and JDK17 for the runtime.*
 
+Yozons released 8.14.4 to its customers on 17 August 2024, the first patch release based on the last open source version of Vaadin 8.  Unfortunately, we do not yet know how to make this available to others via Maven.
+
 To contribute, first refer to [Contributing Code](https://github.com/vaadin/framework/blob/master/CONTRIBUTING.md)
 for general instructions and requirements for contributing code to the Vaadin framework.
 
