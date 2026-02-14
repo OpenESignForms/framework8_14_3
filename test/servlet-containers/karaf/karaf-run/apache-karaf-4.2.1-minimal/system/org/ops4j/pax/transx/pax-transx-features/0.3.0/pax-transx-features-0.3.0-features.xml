@@ -28,7 +28,7 @@
 
     <feature name="pax-transx-tm-api" version="0.3.0">
         <!--
-            That's only a dependency="true". Karaf's "transaction" feature installs javax.transaction:javax.transaction-api:1.2
+            That's only a dependency="true". Karaf's "transaction" feature installs jakarta.transaction:jakarta.transaction-api:1.2
             together with cdi-api, el-api, interceptor-api and javax.inject bundles
         -->
         <bundle dependency="true">mvn:org.apache.geronimo.specs/geronimo-jta_1.1_spec/1.1.1</bundle>

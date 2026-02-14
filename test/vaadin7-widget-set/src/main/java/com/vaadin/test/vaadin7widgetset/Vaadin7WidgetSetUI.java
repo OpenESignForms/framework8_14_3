@@ -1,6 +1,6 @@
 package com.vaadin.test.vaadin7widgetset;
 
-import javax.servlet.annotation.WebServlet;
+import jakarta.servlet.annotation.WebServlet;
 
 import com.vaadin.annotations.VaadinServletConfiguration;
 import com.vaadin.server.VaadinServlet;

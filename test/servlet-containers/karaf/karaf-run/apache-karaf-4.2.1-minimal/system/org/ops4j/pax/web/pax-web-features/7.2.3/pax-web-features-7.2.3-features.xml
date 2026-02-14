@@ -35,8 +35,8 @@
 
     <feature name="pax-jetty" description="Provide Jetty engine support" version="9.4.11.v20180605">
         <bundle dependency="true" start-level="30">mvn:org.apache.servicemix.specs/org.apache.servicemix.specs.activation-api-1.1/2.5.0</bundle>
-        <bundle dependency="true" start-level="30">mvn:javax.servlet/javax.servlet-api/3.1.0</bundle>
-        <bundle dependency="true" start-level="30">mvn:javax.mail/mail/1.4.4</bundle>
+        <bundle dependency="true" start-level="30">mvn:jakarta.servlet/jakarta.servlet-api/3.1.0</bundle>
+        <bundle dependency="true" start-level="30">mvn:jakarta.mail/mail/1.4.4</bundle>
         <bundle dependency="true" start-level="30">mvn:org.apache.geronimo.specs/geronimo-jta_1.1_spec/1.1.1</bundle>
         <bundle dependency="true" start-level="30">mvn:javax.annotation/javax.annotation-api/1.2</bundle>
         <bundle dependency="true" start-level="30">mvn:org.apache.geronimo.specs/geronimo-jaspic_1.0_spec/1.1</bundle>
@@ -70,12 +70,12 @@
 	        <bundle start-level="30">mvn:org.eclipse.jetty.websocket/websocket-api/9.4.11.v20180605</bundle>
 	        <bundle start-level="30">mvn:org.eclipse.jetty.websocket/javax-websocket-server-impl/9.4.11.v20180605</bundle>
 	        <bundle start-level="30">mvn:org.eclipse.jetty.websocket/javax-websocket-client-impl/9.4.11.v20180605</bundle>
-	        <bundle start-level="30">mvn:javax.websocket/javax.websocket-api/1.1</bundle>
+	        <bundle start-level="30">mvn:jakarta.websocket/jakarta.websocket-api/1.1</bundle>
         </conditional>
 
         <capability>
-            osgi.contract;osgi.contract=JavaServlet;version:Version="3.1.0";uses:="javax.servlet,javax.servlet.http,javax.servlet.descriptor,javax.servlet.annotation",
-            osgi.contract;osgi.contract=JavaWebSockets;version:Version="1";uses:="javax.websocket, javax.websocket.server"
+            osgi.contract;osgi.contract=JavaServlet;version:Version="3.1.0";uses:="jakarta.servlet,jakarta.servlet.http,jakarta.servlet.descriptor,jakarta.servlet.annotation",
+            osgi.contract;osgi.contract=JavaWebSockets;version:Version="1";uses:="jakarta.websocket, jakarta.websocket.server"
         </capability>
     </feature>
 
@@ -103,7 +103,7 @@
         <configfile finalname="${karaf.etc}/jetty.xml">mvn:org.ops4j.pax.web/pax-web-features/7.2.3/xml/jettyconfig</configfile>
         <config name="org.ops4j.pax.web">
             org.osgi.service.http.port=8181
-            javax.servlet.context.tempdir=${karaf.data}/pax-web-jsp
+            jakarta.servlet.context.tempdir=${karaf.data}/pax-web-jsp
             org.ops4j.pax.web.config.file=${karaf.etc}/jetty.xml
         </config>
         <feature>scr</feature>
@@ -134,14 +134,14 @@
     <feature name="pax-http-whiteboard" description="Provide HTTP Whiteboard pattern support" version="7.2.3">
         <feature version="[7.2,7.3)">pax-http</feature>
         <bundle dependency="true" start-level="30">mvn:org.eclipse.jdt.core.compiler/ecj/4.5.1</bundle>
-        <bundle start-level="30" dependency="true">mvn:javax.el/javax.el-api/3.0.0</bundle>
+        <bundle start-level="30" dependency="true">mvn:jakarta.el/jakarta.el-api/3.0.0</bundle>
         <bundle start-level="30">mvn:org.ops4j.pax.web/pax-web-jsp/7.2.3</bundle>
         <bundle start-level="30">mvn:org.ops4j.pax.web/pax-web-extender-whiteboard/7.2.3</bundle>
 
         <capability>
-            osgi.contract;osgi.contract=JavaEl;version:Version="3";uses:="javax.el",
-            osgi.contract;osgi.contract=JavaJSP;version:Version="2.3";uses:="javax.servlet.jsp, javax.servlet.jsp.el, javax.servlet.jsp.tagext",
-            osgi.contract;osgi.contract=JavaJSTL;version:Version="1.2";uses:="javax.servlet.jsp.jstl.core, javax.servlet.jsp.jstl.fmt, javax.servlet.jsp.jstl.sql, javax.servlet.jsp.jstl.tlv"
+            osgi.contract;osgi.contract=JavaEl;version:Version="3";uses:="jakarta.el",
+            osgi.contract;osgi.contract=JavaJSP;version:Version="2.3";uses:="jakarta.servlet.jsp, jakarta.servlet.jsp.el, jakarta.servlet.jsp.tagext",
+            osgi.contract;osgi.contract=JavaJSTL;version:Version="1.2";uses:="jakarta.servlet.jsp.jstl.core, jakarta.servlet.jsp.jstl.fmt, jakarta.servlet.jsp.jstl.sql, jakarta.servlet.jsp.jstl.tlv"
         </capability>
     </feature>
 
@@ -163,16 +163,16 @@
         </config>
         <config name="org.ops4j.pax.web">
             org.osgi.service.http.port=8181
-            javax.servlet.context.tempdir=${karaf.data}/pax-web-jsp
+            jakarta.servlet.context.tempdir=${karaf.data}/pax-web-jsp
         </config>
         <feature>scr</feature>
         <feature version="[7.2,7.3)">pax-http</feature>
-        <bundle dependency="true" start-level="30">mvn:javax.el/javax.el-api/3.0.0</bundle>
-        <bundle dependency="true" start-level="30">mvn:javax.security.auth.message/javax.security.auth.message-api/1.1</bundle>
+        <bundle dependency="true" start-level="30">mvn:jakarta.el/jakarta.el-api/3.0.0</bundle>
+        <bundle dependency="true" start-level="30">mvn:jakarta.security.auth.message/jakarta.security.auth.message-api/1.1</bundle>
         <bundle dependency="true" start-level="30">mvn:javax.validation/validation-api/1.1.0.Final</bundle>
         <bundle dependency="true" start-level="30">mvn:org.ops4j.pax.tipi/org.ops4j.pax.tipi.tomcat-embed-core/8.5.32.1</bundle>
         <bundle dependency="true" start-level="30">mvn:org.ops4j.pax.tipi/org.ops4j.pax.tipi.tomcat-embed-websocket/8.5.32.1</bundle>
-        <bundle dependency="true" start-level="30">mvn:javax.servlet/javax.servlet-api/3.1.0</bundle>
+        <bundle dependency="true" start-level="30">mvn:jakarta.servlet/jakarta.servlet-api/3.1.0</bundle>
         <bundle dependency="true" start-level="30">mvn:org.apache.geronimo.specs/geronimo-atinject_1.0_spec/1.0</bundle>
         <bundle dependency="true" start-level="30">mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.jsr305/1.3.9_1</bundle>
         <bundle dependency="true" start-level="30">mvn:org.apache.servicemix.specs/org.apache.servicemix.specs.activation-api-1.1/2.5.0</bundle>
@@ -193,7 +193,7 @@
 
         <bundle dependency="true" start-level="30">mvn:org.apache.servicemix.specs/org.apache.servicemix.specs.jaxp-api-1.3/2.5.0</bundle>
         <bundle dependency="true" start-level="30">mvn:org.apache.geronimo.specs/geronimo-annotation_1.1_spec/1.0.1</bundle>
-        <bundle dependency="true" start-level="30">mvn:javax.websocket/javax.websocket-api/1.1</bundle>
+        <bundle dependency="true" start-level="30">mvn:jakarta.websocket/jakarta.websocket-api/1.1</bundle>
 
         <feature>pax-web-core</feature>
         <bundle start-level="30">mvn:org.ops4j.pax.web/pax-web-runtime/7.2.3</bundle>
@@ -202,8 +202,8 @@
 
         <capability>
             pax.http.provider;provider:=tomcat
-            osgi.contract;osgi.contract=JavaServlet;version:Version="3.1.0";uses:="javax.servlet,javax.servlet.http,javax.servlet.descriptor,javax.servlet.annotation",
-            osgi.contract;osgi.contract=JavaWebSockets;version:Version="1";uses:="javax.websocket, javax.websocket.server"
+            osgi.contract;osgi.contract=JavaServlet;version:Version="3.1.0";uses:="jakarta.servlet,jakarta.servlet.http,jakarta.servlet.descriptor,jakarta.servlet.annotation",
+            osgi.contract;osgi.contract=JavaWebSockets;version:Version="1";uses:="jakarta.websocket, jakarta.websocket.server"
         </capability>
 
         <conditional>
@@ -244,10 +244,10 @@
     </feature>
 
     <feature name="undertow" version="1.4.23.Final">
-        <bundle dependency="true" start-level="30">mvn:javax.servlet/javax.servlet-api/3.1.0</bundle>
+        <bundle dependency="true" start-level="30">mvn:jakarta.servlet/jakarta.servlet-api/3.1.0</bundle>
         <bundle dependency="true">mvn:javax.annotation/javax.annotation-api/1.2</bundle>
         <bundle dependency="true">mvn:org.jboss.logging/jboss-logging/3.3.0.Final</bundle>
-        <bundle dependency="true">mvn:javax.websocket/javax.websocket-api/1.1</bundle>
+        <bundle dependency="true">mvn:jakarta.websocket/jakarta.websocket-api/1.1</bundle>
 
         <bundle>mvn:org.jboss.xnio/xnio-api/3.3.8.Final</bundle>
         <bundle>mvn:org.jboss.xnio/xnio-nio/3.3.8.Final</bundle>
@@ -255,8 +255,8 @@
         <bundle>mvn:io.undertow/undertow-servlet/1.4.23.Final</bundle>
         <bundle>mvn:io.undertow/undertow-websockets-jsr/1.4.23.Final</bundle>
         <capability>
-            osgi.contract;osgi.contract=JavaServlet;version:Version="3.1.0";uses:="javax.servlet,javax.servlet.http,javax.servlet.descriptor,javax.servlet.annotation",
-            osgi.contract;osgi.contract=JavaWebSockets;version:Version="1";uses:="javax.websocket, javax.websocket.server"
+            osgi.contract;osgi.contract=JavaServlet;version:Version="3.1.0";uses:="jakarta.servlet,jakarta.servlet.http,jakarta.servlet.descriptor,jakarta.servlet.annotation",
+            osgi.contract;osgi.contract=JavaWebSockets;version:Version="1";uses:="jakarta.websocket, jakarta.websocket.server"
         </capability>
     </feature>
 
@@ -265,7 +265,7 @@
         <configfile finalname="${karaf.etc}/undertow.xml">mvn:org.ops4j.pax.web/pax-web-features/7.2.3/xml/undertowconfig</configfile>
         <config name="org.ops4j.pax.web">
             org.osgi.service.http.port=8181
-            javax.servlet.context.tempdir=${karaf.data}/pax-web-jsp
+            jakarta.servlet.context.tempdir=${karaf.data}/pax-web-jsp
             #org.ops4j.pax.web.config.file=${karaf.etc}/undertow.properties
             org.ops4j.pax.web.config.file=${karaf.etc}/undertow.xml
         </config>

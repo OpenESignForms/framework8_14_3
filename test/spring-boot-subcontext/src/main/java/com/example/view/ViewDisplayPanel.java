@@ -1,6 +1,6 @@
 package com.example.view;
 
-import javax.annotation.PostConstruct;
+import jakarta.annotation.PostConstruct;
 
 import com.vaadin.navigator.View;
 import com.vaadin.navigator.ViewDisplay;

@@ -201,8 +201,8 @@
                 <version>3.0</version>
             </dependency>
             <dependency>
-                <groupId>javax.servlet</groupId>
-                <artifactId>javax.servlet-api</artifactId>
+                <groupId>jakarta.servlet</groupId>
+                <artifactId>jakarta.servlet-api</artifactId>
                 <version>3.0.1</version>
             </dependency>
             <dependency>
@@ -353,7 +353,7 @@
         </dependency>
         <dependency>
             <groupId>org.glassfish</groupId>
-            <artifactId>javax.el</artifactId>
+            <artifactId>jakarta.el</artifactId>
             <version>3.0.0</version>
             <scope>test</scope>
         </dependency>	

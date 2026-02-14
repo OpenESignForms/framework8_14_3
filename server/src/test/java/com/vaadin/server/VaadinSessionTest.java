@@ -17,10 +17,10 @@ import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
-import javax.servlet.ServletConfig;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpSession;
-import javax.servlet.http.HttpSessionBindingEvent;
+import jakarta.servlet.ServletConfig;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpSession;
+import jakarta.servlet.http.HttpSessionBindingEvent;
 
 import org.easymock.EasyMock;
 import org.easymock.IMocksControl;

@@ -4,8 +4,8 @@ import com.vaadin.annotations.VaadinServletConfiguration;
 import com.vaadin.server.VaadinServlet;
 import com.vaadin.tests.integration.ServletIntegrationUI;
 
-import javax.servlet.annotation.WebInitParam;
-import javax.servlet.annotation.WebServlet;
+import jakarta.servlet.annotation.WebInitParam;
+import jakarta.servlet.annotation.WebServlet;
 
 @WebServlet(urlPatterns = "/*" ,name = "IntegrationTestUIProvider", asyncSupported = true, initParams = {
         @WebInitParam(name = "UIProvider", value = "com.vaadin.tests.IntegrationTestUIProvider")})

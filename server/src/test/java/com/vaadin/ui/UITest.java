@@ -11,7 +11,7 @@ import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
-import javax.servlet.ServletConfig;
+import jakarta.servlet.ServletConfig;
 
 import org.junit.Test;
 import org.mockito.Mockito;

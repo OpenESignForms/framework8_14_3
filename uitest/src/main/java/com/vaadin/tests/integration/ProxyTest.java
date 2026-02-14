@@ -1,6 +1,6 @@
 package com.vaadin.tests.integration;
 
-import javax.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletRequest;
 
 import org.eclipse.jetty.proxy.ProxyServlet;
 import org.eclipse.jetty.server.Connector;

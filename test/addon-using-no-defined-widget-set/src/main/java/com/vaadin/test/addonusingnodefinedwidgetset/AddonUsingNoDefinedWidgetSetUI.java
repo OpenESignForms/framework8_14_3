@@ -1,6 +1,6 @@
 package com.vaadin.test.addonusingnodefinedwidgetset;
 
-import javax.servlet.annotation.WebServlet;
+import jakarta.servlet.annotation.WebServlet;
 
 import com.vaadin.annotations.VaadinServletConfiguration;
 import com.vaadin.contextmenu.ContextMenu;

@@ -22,7 +22,7 @@ import java.util.logging.Logger;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import javax.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.HttpServletResponse;
 
 import com.vaadin.shared.ApplicationConstants;
 import com.vaadin.ui.UI;

@@ -24,9 +24,9 @@ import java.io.Serializable;
 import javax.portlet.MimeResponse;
 import javax.portlet.PortletResponse;
 import javax.portlet.ResourceResponse;
-import javax.servlet.ServletResponse;
-import javax.servlet.http.Cookie;
-import javax.servlet.http.HttpServletResponse;
+import jakarta.servlet.ServletResponse;
+import jakarta.servlet.http.Cookie;
+import jakarta.servlet.http.HttpServletResponse;
 
 import com.vaadin.util.CurrentInstance;
 

@@ -42,9 +42,9 @@ import java.util.concurrent.locks.ReentrantLock;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-import javax.servlet.http.HttpSession;
-import javax.servlet.http.HttpSessionBindingEvent;
-import javax.servlet.http.HttpSessionBindingListener;
+import jakarta.servlet.http.HttpSession;
+import jakarta.servlet.http.HttpSessionBindingEvent;
+import jakarta.servlet.http.HttpSessionBindingListener;
 
 import com.vaadin.event.EventRouter;
 import com.vaadin.shared.Registration;
@@ -55,7 +55,7 @@ import com.vaadin.util.ReflectTools;
 
 /**
  * Contains everything that Vaadin needs to store for a specific user. This is
- * typically stored in a javax.servlet.http.HttpSession or
+ * typically stored in a jakarta.servlet.http.HttpSession or
  * javax.portlet.PortletSession, but others storage mechanisms might also be
  * used.
  * <p>
@@ -272,7 +272,7 @@ public class VaadinSession implements HttpSessionBindingListener, Serializable {
     }
 
     /**
-     * @see javax.servlet.http.HttpSessionBindingListener#valueBound(HttpSessionBindingEvent)
+     * @see jakarta.servlet.http.HttpSessionBindingListener#valueBound(HttpSessionBindingEvent)
      */
     @Override
     public void valueBound(HttpSessionBindingEvent arg0) {
@@ -280,7 +280,7 @@ public class VaadinSession implements HttpSessionBindingListener, Serializable {
     }
 
     /**
-     * @see javax.servlet.http.HttpSessionBindingListener#valueUnbound(HttpSessionBindingEvent)
+     * @see jakarta.servlet.http.HttpSessionBindingListener#valueUnbound(HttpSessionBindingEvent)
      */
     @Override
     public void valueUnbound(HttpSessionBindingEvent event) {

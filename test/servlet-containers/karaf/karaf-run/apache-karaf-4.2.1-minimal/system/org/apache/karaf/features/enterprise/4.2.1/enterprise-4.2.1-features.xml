@@ -33,9 +33,9 @@
     <feature name="transaction-api" version="1.2.0">
         <bundle dependency="true">mvn:javax.interceptor/javax.interceptor-api/1.2</bundle>
         <bundle dependency="true">mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.javax-inject/1_2</bundle>
-        <bundle dependency="true">mvn:javax.el/javax.el-api/3.0.0</bundle>
+        <bundle dependency="true">mvn:jakarta.el/jakarta.el-api/3.0.0</bundle>
         <bundle dependency="true">mvn:javax.enterprise/cdi-api/1.2</bundle>
-        <bundle>mvn:javax.transaction/javax.transaction-api/1.2</bundle>
+        <bundle>mvn:jakarta.transaction/jakarta.transaction-api/1.2</bundle>
         <feature>pax-transx-tm-api</feature>
     </feature>
 
@@ -165,7 +165,7 @@ com.atomikos.icatch.log_base_dir=${karaf.data}/atomikos
         <bundle dependency="true">mvn:org.apache.xbean/xbean-asm6-shaded/4.9</bundle>
         <feature version="3.0.0">openjpa</feature>
         <capability>
-            osgi.service;objectClass=javax.persistence.spi.PersistenceProvider;effective:=active;javax.persistence.provider=org.apache.openjpa.persistence.PersistenceProviderImpl
+            osgi.service;objectClass=jakarta.persistence.spi.PersistenceProvider;effective:=active;jakarta.persistence.provider=org.apache.openjpa.persistence.PersistenceProviderImpl
         </capability>
     </feature>
 
@@ -174,14 +174,14 @@ com.atomikos.icatch.log_base_dir=${karaf.data}/atomikos
         <feature version="5.2.9.Final">hibernate-orm</feature>
         <bundle dependency="true">mvn:net.bytebuddy/byte-buddy/1.6.6</bundle>
         <capability>
-            osgi.service;objectClass=javax.persistence.spi.PersistenceProvider;effective:=active;javax.persistence.provider=org.hibernate.jpa.HibernatePersistenceProvider
+            osgi.service;objectClass=jakarta.persistence.spi.PersistenceProvider;effective:=active;jakarta.persistence.provider=org.hibernate.jpa.HibernatePersistenceProvider
         </capability>
     </feature>
 
     <feature name="eclipselink" description="Eclipselink JPA persistence engine support" version="2.7.3">
         <details>Eclipselink persistence engine.</details>
         <feature version="[2,3)">jpa</feature>
-        <bundle dependency="true">mvn:org.eclipse.persistence/javax.persistence/2.2.0</bundle>
+        <bundle dependency="true">mvn:org.eclipse.persistence/jakarta.persistence/2.2.0</bundle>
         <feature version="[2,3)">transaction</feature>
         <bundle>mvn:org.eclipse.persistence/org.eclipse.persistence.jpa/2.7.3</bundle>
         <bundle>mvn:org.eclipse.persistence/org.eclipse.persistence.core/2.7.3</bundle>
@@ -190,7 +190,7 @@ com.atomikos.icatch.log_base_dir=${karaf.data}/atomikos
         <bundle>mvn:org.eclipse.persistence/org.eclipse.persistence.jpa.jpql/2.7.3</bundle>
         <bundle>mvn:org.apache.aries.jpa/org.apache.aries.jpa.eclipselink.adapter/2.7.0</bundle>
         <capability>
-            osgi.service;objectClass=javax.persistence.spi.PersistenceProvider;effective:=active;javax.persistence.provider=org.eclipse.persistence.jpa.PersistenceProvider
+            osgi.service;objectClass=jakarta.persistence.spi.PersistenceProvider;effective:=active;jakarta.persistence.provider=org.eclipse.persistence.jpa.PersistenceProvider
         </capability>
     </feature>
 

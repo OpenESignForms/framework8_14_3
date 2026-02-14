@@ -1,6 +1,6 @@
 package com.vaadin.test.osgi.myapplication;
 
-import javax.servlet.annotation.WebServlet;
+import jakarta.servlet.annotation.WebServlet;
 
 import org.osgi.service.component.annotations.Component;
 

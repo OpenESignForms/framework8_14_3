@@ -52,9 +52,9 @@ import java.util.logging.Logger;
 
 import javax.portlet.Portlet;
 import javax.portlet.PortletContext;
-import javax.servlet.Servlet;
-import javax.servlet.ServletContext;
-import javax.servlet.http.HttpServletResponse;
+import jakarta.servlet.Servlet;
+import jakarta.servlet.ServletContext;
+import jakarta.servlet.http.HttpServletResponse;
 
 import com.vaadin.annotations.PreserveOnRefresh;
 import com.vaadin.server.VaadinSession.FutureAccess;
@@ -88,7 +88,7 @@ import elemental.json.impl.JsonUtil;
 public abstract class VaadinService implements Serializable {
     /**
      * Attribute name for telling
-     * {@link VaadinSession#valueUnbound(javax.servlet.http.HttpSessionBindingEvent)}
+     * {@link VaadinSession#valueUnbound(jakarta.servlet.http.HttpSessionBindingEvent)}
      * that it should not close a {@link VaadinSession} even though it gets
      * unbound. If a {@code VaadinSession} has an attribute with this name and
      * the attribute value is {@link Boolean#TRUE}, that session will not be

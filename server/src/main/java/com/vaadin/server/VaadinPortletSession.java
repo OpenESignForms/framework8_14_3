@@ -38,7 +38,7 @@ import javax.portlet.RenderResponse;
 import javax.portlet.ResourceRequest;
 import javax.portlet.ResourceResponse;
 import javax.portlet.StateAwareResponse;
-import javax.servlet.http.HttpSessionBindingListener;
+import jakarta.servlet.http.HttpSessionBindingListener;
 import javax.xml.namespace.QName;
 
 import com.vaadin.server.communication.PortletListenerNotifier;

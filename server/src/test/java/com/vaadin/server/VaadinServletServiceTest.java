@@ -8,8 +8,8 @@ import static org.junit.Assert.assertEquals;
 import java.net.MalformedURLException;
 import java.net.URL;
 
-import javax.servlet.ServletException;
-import javax.servlet.http.HttpServletRequest;
+import jakarta.servlet.ServletException;
+import jakarta.servlet.http.HttpServletRequest;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -83,9 +83,9 @@ public class VaadinServletServiceTest {
             throws Exception {
         HttpServletRequest request = createRequest(base, realContextPath,
                 realServletPath, pathInfo);
-        expect(request.getAttribute("javax.servlet.include.context_path"))
+        expect(request.getAttribute("jakarta.servlet.include.context_path"))
                 .andReturn(null).anyTimes();
-        expect(request.getAttribute("javax.servlet.include.servlet_path"))
+        expect(request.getAttribute("jakarta.servlet.include.servlet_path"))
                 .andReturn(null).anyTimes();
 
         return request;

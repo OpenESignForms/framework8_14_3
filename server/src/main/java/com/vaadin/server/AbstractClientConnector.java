@@ -52,7 +52,7 @@ import com.vaadin.util.ReflectTools;
 import elemental.json.JsonObject;
 import elemental.json.JsonValue;
 
-import javax.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.HttpServletResponse;
 
 /**
  * An abstract base class for ClientConnector implementations. This class

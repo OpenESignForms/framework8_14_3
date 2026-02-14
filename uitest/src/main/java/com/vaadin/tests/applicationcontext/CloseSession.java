@@ -1,6 +1,6 @@
 package com.vaadin.tests.applicationcontext;
 
-import javax.servlet.http.HttpSession;
+import jakarta.servlet.http.HttpSession;
 
 import com.vaadin.server.Page;
 import com.vaadin.server.VaadinRequest;

@@ -6,8 +6,8 @@ import static org.junit.Assert.assertTrue;
 
 import java.util.Properties;
 
-import javax.servlet.ServletException;
-import javax.servlet.http.HttpServletRequest;
+import jakarta.servlet.ServletException;
+import jakarta.servlet.http.HttpServletRequest;
 
 import org.easymock.EasyMock;
 import org.junit.Test;

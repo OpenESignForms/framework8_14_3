@@ -28,7 +28,7 @@ import java.util.TimeZone;
 import javax.portlet.MimeResponse;
 import javax.portlet.PortletResponse;
 import javax.portlet.ResourceResponse;
-import javax.servlet.http.Cookie;
+import jakarta.servlet.http.Cookie;
 
 /**
  * Wrapper for {@link PortletResponse} and its subclasses.

@@ -20,8 +20,8 @@ import java.io.IOException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-import javax.servlet.ServletConfig;
-import javax.servlet.ServletException;
+import jakarta.servlet.ServletConfig;
+import jakarta.servlet.ServletException;
 
 import org.atmosphere.cache.UUIDBroadcasterCache;
 import org.atmosphere.client.TrackMessageSizeInterceptor;

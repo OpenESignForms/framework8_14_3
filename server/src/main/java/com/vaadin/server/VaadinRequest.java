@@ -28,9 +28,9 @@ import java.util.Map;
 
 import javax.portlet.ClientDataRequest;
 import javax.portlet.PortletRequest;
-import javax.servlet.ServletRequest;
-import javax.servlet.http.Cookie;
-import javax.servlet.http.HttpServletRequest;
+import jakarta.servlet.ServletRequest;
+import jakarta.servlet.http.Cookie;
+import jakarta.servlet.http.HttpServletRequest;
 
 import com.vaadin.util.CurrentInstance;
 
@@ -47,7 +47,7 @@ public interface VaadinRequest extends Serializable {
      * parameter, though other request types might have other ways of
      * representing parameters.
      *
-     * @see javax.servlet.ServletRequest#getParameter(String)
+     * @see jakarta.servlet.ServletRequest#getParameter(String)
      * @see javax.portlet.PortletRequest#getParameter(String)
      *
      * @param parameter
@@ -64,7 +64,7 @@ public interface VaadinRequest extends Serializable {
      *
      * @see #getParameter(String)
      *
-     * @see javax.servlet.ServletRequest#getParameterMap()
+     * @see jakarta.servlet.ServletRequest#getParameterMap()
      * @see javax.portlet.PortletRequest#getParameter(String)
      *
      * @return A mapping of parameter names to arrays of parameter values
@@ -75,7 +75,7 @@ public interface VaadinRequest extends Serializable {
      * Returns the length of the request content that can be read from the input
      * stream returned by {@link #getInputStream()}.
      *
-     * @see javax.servlet.ServletRequest#getContentLength()
+     * @see jakarta.servlet.ServletRequest#getContentLength()
      * @see javax.portlet.ClientDataRequest#getContentLength()
      *
      * @return content length in bytes
@@ -87,7 +87,7 @@ public interface VaadinRequest extends Serializable {
      * request content length can be obtained with {@link #getContentLength()}
      * without reading the full stream contents.
      *
-     * @see javax.servlet.ServletRequest#getInputStream()
+     * @see jakarta.servlet.ServletRequest#getInputStream()
      * @see javax.portlet.ClientDataRequest#getPortletInputStream()
      *
      * @return the input stream from which the contents of the request can be
@@ -105,7 +105,7 @@ public interface VaadinRequest extends Serializable {
      * @return the value of the attribute, or <code>null</code> if there is no
      *         attribute with the given name
      *
-     * @see javax.servlet.ServletRequest#getAttribute(String)
+     * @see jakarta.servlet.ServletRequest#getAttribute(String)
      * @see javax.portlet.PortletRequest#getAttribute(String)
      */
     public Object getAttribute(String name);
@@ -118,7 +118,7 @@ public interface VaadinRequest extends Serializable {
      * @param value
      *            the attribute value
      *
-     * @see javax.servlet.ServletRequest#setAttribute(String, Object)
+     * @see jakarta.servlet.ServletRequest#setAttribute(String, Object)
      * @see javax.portlet.PortletRequest#setAttribute(String, Object)
      */
     public void setAttribute(String name, Object value);
@@ -130,7 +130,7 @@ public interface VaadinRequest extends Serializable {
      *
      * @return a string with the path relative to the application.
      *
-     * @see javax.servlet.http.HttpServletRequest#getPathInfo()
+     * @see jakarta.servlet.http.HttpServletRequest#getPathInfo()
      */
     public String getPathInfo();
 
@@ -182,7 +182,7 @@ public interface VaadinRequest extends Serializable {
      * @return a string containing the name of the MIME type of the request, or
      *         null if the type is not known
      *
-     * @see javax.servlet.ServletRequest#getContentType()
+     * @see jakarta.servlet.ServletRequest#getContentType()
      * @see javax.portlet.ResourceRequest#getContentType()
      *
      */
