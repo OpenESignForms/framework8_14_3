@@ -1,7 +1,7 @@
 package com.vaadin.test.dependencyrewrite;
 
-import jakarta.servlet.annotation.WebInitParam;
-import jakarta.servlet.annotation.WebServlet;
+import javax.servlet.annotation.WebInitParam;
+import javax.servlet.annotation.WebServlet;
 
 import com.vaadin.server.DeploymentConfiguration;
 import com.vaadin.server.ServiceException;

@@ -1,6 +1,6 @@
 package com.vaadin.test.ownwidgetset;
 
-import jakarta.servlet.annotation.WebServlet;
+import javax.servlet.annotation.WebServlet;
 
 import com.vaadin.annotations.VaadinServletConfiguration;
 import com.vaadin.annotations.Widgetset;

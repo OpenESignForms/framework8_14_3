@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
 
-import jakarta.servlet.ServletContext;
+import javax.servlet.ServletContext;
 
 import org.apache.commons.io.IOUtils;
 

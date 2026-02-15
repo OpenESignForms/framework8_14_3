@@ -8,7 +8,7 @@ import static org.junit.Assert.assertEquals;
 import java.net.MalformedURLException;
 import java.net.URL;
 
-import jakarta.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletRequest;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -86,9 +86,9 @@ public class TestAbstractApplicationServletStaticFilesLocation {
             throws Exception {
         HttpServletRequest request = createRequest(base, realContextPath,
                 realServletPath, pathInfo);
-        expect(request.getAttribute("jakarta.servlet.include.context_path"))
+        expect(request.getAttribute("javax.servlet.include.context_path"))
                 .andReturn(null).anyTimes();
-        expect(request.getAttribute("jakarta.servlet.include.servlet_path"))
+        expect(request.getAttribute("javax.servlet.include.servlet_path"))
                 .andReturn(null).anyTimes();
 
         return request;

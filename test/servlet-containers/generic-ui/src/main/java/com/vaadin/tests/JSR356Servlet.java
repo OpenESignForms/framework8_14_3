@@ -4,8 +4,8 @@ import com.vaadin.annotations.VaadinServletConfiguration;
 import com.vaadin.server.VaadinServlet;
 import com.vaadin.tests.integration.ServletIntegrationWebsocketUI;
 
-import jakarta.servlet.annotation.WebInitParam;
-import jakarta.servlet.annotation.WebServlet;
+import javax.servlet.annotation.WebInitParam;
+import javax.servlet.annotation.WebServlet;
 
 /**
  * Created by elmot on 06-02-2017.

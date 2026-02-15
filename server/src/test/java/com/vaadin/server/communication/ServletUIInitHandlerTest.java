@@ -6,10 +6,10 @@ import java.io.IOException;
 import java.util.Properties;
 import java.util.concurrent.atomic.AtomicInteger;
 
-import jakarta.servlet.ServletConfig;
-import jakarta.servlet.ServletOutputStream;
-import jakarta.servlet.http.HttpServletRequest;
-import jakarta.servlet.http.HttpServletResponse;
+import javax.servlet.ServletConfig;
+import javax.servlet.ServletOutputStream;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 
 import org.junit.Test;
 import org.mockito.Mockito;

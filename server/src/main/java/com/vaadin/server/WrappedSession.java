@@ -20,7 +20,7 @@ import java.io.Serializable;
 import java.util.Set;
 
 import javax.portlet.PortletSession;
-import jakarta.servlet.http.HttpSession;
+import javax.servlet.http.HttpSession;
 
 /**
  * A generic session, wrapping a more specific session implementation, e.g.
@@ -38,7 +38,7 @@ public interface WrappedSession extends Serializable {
      * @return an integer specifying the number of seconds this session remains
      *         open between client requests
      *
-     * @see jakarta.servlet.http.HttpSession#getMaxInactiveInterval()
+     * @see javax.servlet.http.HttpSession#getMaxInactiveInterval()
      * @see javax.portlet.PortletSession#getMaxInactiveInterval()
      */
     public int getMaxInactiveInterval();
@@ -51,7 +51,7 @@ public interface WrappedSession extends Serializable {
      * @return the attribute value, or <code>null</code> if the attribute is not
      *         defined in the session
      *
-     * @see jakarta.servlet.http.HttpSession#getAttribute(String)
+     * @see javax.servlet.http.HttpSession#getAttribute(String)
      * @see javax.portlet.PortletSession#getAttribute(String)
      */
     public Object getAttribute(String name);
@@ -64,7 +64,7 @@ public interface WrappedSession extends Serializable {
      * @param value
      *            the attribute value
      *
-     * @see jakarta.servlet.http.HttpSession#setAttribute(String, Object)
+     * @see javax.servlet.http.HttpSession#setAttribute(String, Object)
      * @see javax.portlet.PortletSession#setAttribute(String, Object)
      */
     public void setAttribute(String name, Object value);

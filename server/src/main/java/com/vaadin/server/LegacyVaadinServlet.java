@@ -16,9 +16,9 @@
 
 package com.vaadin.server;
 
-import jakarta.servlet.ServletConfig;
-import jakarta.servlet.ServletException;
-import jakarta.servlet.http.HttpServletRequest;
+import javax.servlet.ServletConfig;
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServletRequest;
 
 import com.vaadin.util.ReflectTools;
 

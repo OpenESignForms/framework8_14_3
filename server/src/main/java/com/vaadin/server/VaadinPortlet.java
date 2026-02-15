@@ -41,8 +41,8 @@ import javax.portlet.RenderRequest;
 import javax.portlet.RenderResponse;
 import javax.portlet.ResourceRequest;
 import javax.portlet.ResourceResponse;
-import jakarta.servlet.http.HttpServletRequest;
-import jakarta.servlet.http.HttpServletRequestWrapper;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletRequestWrapper;
 
 import com.liferay.portal.kernel.util.PortalClassLoaderUtil;
 import com.liferay.portal.kernel.util.PropsUtil;
@@ -278,7 +278,7 @@ public class VaadinPortlet extends GenericPortlet
                 // PortalUtil.getOriginalServletRequest(httpRequest);
                 httpRequest = (HttpServletRequest) invokeStaticLiferayMethod(
                         portalUtilClass, "getOriginalServletRequest",
-                        httpRequest, "jakarta.servlet.http.HttpServletRequest");
+                        httpRequest, "javax.servlet.http.HttpServletRequest");
                 return httpRequest;
             } catch (Exception e) {
                 throw new IllegalStateException("Liferay request not detected",

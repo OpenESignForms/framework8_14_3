@@ -21,7 +21,7 @@ post about the experiment and the results].
 
 To fully understand this article and follow through the steps, you
 should have some basic knowledge of Amazon Web Services (AWS),
-http://jakarta.apache.org/jmeter/[Apache JMeter], MySQL and Linux shell
+http://javax.apache.org/jmeter/[Apache JMeter], MySQL and Linux shell
 usage. You will also need to know how to checkout the
 http://dev.vaadin.com/svn/incubator/QuickTickets/trunk/[QuickTickets
 project] from SVN and run http://ant.apache.org/[Ant] targets to

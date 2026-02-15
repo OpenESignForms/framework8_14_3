@@ -3,7 +3,7 @@ package com.vaadin.tests.minitutorials.v7b1;
 import java.util.List;
 
 import javax.portlet.PortletException;
-import jakarta.servlet.ServletException;
+import javax.servlet.ServletException;
 
 import org.jsoup.nodes.Comment;
 import org.jsoup.nodes.Element;

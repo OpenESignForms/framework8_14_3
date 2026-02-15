@@ -1,6 +1,6 @@
 package com.vaadin.tests.requesthandlers;
 
-import jakarta.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletRequest;
 
 import com.vaadin.server.ExternalResource;
 import com.vaadin.server.VaadinServletService;

@@ -25,7 +25,7 @@ import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-import jakarta.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletRequest;
 
 import com.vaadin.server.communication.PushRequestHandler;
 import com.vaadin.server.communication.ServletBootstrapHandler;

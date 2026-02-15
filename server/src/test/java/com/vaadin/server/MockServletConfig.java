@@ -3,8 +3,8 @@ package com.vaadin.server;
 import java.util.Enumeration;
 import java.util.Properties;
 
-import jakarta.servlet.ServletConfig;
-import jakarta.servlet.ServletContext;
+import javax.servlet.ServletConfig;
+import javax.servlet.ServletContext;
 
 /**
  * Mock servlet configuration for tests.
@@ -27,7 +27,7 @@ public class MockServletConfig implements ServletConfig {
     /*
      * (non-Javadoc)
      *
-     * @see jakarta.servlet.ServletConfig#getServletName()
+     * @see javax.servlet.ServletConfig#getServletName()
      */
     @Override
     public String getServletName() {
@@ -37,7 +37,7 @@ public class MockServletConfig implements ServletConfig {
     /*
      * (non-Javadoc)
      *
-     * @see jakarta.servlet.ServletConfig#getServletContext()
+     * @see javax.servlet.ServletConfig#getServletContext()
      */
     @Override
     public ServletContext getServletContext() {
@@ -47,7 +47,7 @@ public class MockServletConfig implements ServletConfig {
     /*
      * (non-Javadoc)
      *
-     * @see jakarta.servlet.ServletConfig#getInitParameter(java.lang.String)
+     * @see javax.servlet.ServletConfig#getInitParameter(java.lang.String)
      */
     @Override
     public String getInitParameter(String name) {
@@ -57,7 +57,7 @@ public class MockServletConfig implements ServletConfig {
     /*
      * (non-Javadoc)
      *
-     * @see jakarta.servlet.ServletConfig#getInitParameterNames()
+     * @see javax.servlet.ServletConfig#getInitParameterNames()
      */
     @Override
     public Enumeration getInitParameterNames() {

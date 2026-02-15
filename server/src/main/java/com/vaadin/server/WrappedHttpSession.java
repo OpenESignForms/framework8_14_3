@@ -21,7 +21,7 @@ import java.util.Enumeration;
 import java.util.HashSet;
 import java.util.Set;
 
-import jakarta.servlet.http.HttpSession;
+import javax.servlet.http.HttpSession;
 
 /**
  * Wrapper for {@link HttpSession}.

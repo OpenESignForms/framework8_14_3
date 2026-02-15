@@ -3,7 +3,7 @@ package com.vaadin.tests.performance;
 import java.util.List;
 import java.util.Optional;
 
-import jakarta.servlet.annotation.WebServlet;
+import javax.servlet.annotation.WebServlet;
 
 import com.vaadin.annotations.VaadinServletConfiguration;
 import com.vaadin.server.VaadinRequest;

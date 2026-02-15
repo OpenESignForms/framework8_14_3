@@ -1,5 +1,6 @@
 /*
  * Copyright 2000-2022 Vaadin Ltd.
+ * Copyright 2024 Yozons Inc.
  *
  * Licensed under the Apache License, Version 2.0 (the "License"); you may not
  * use this file except in compliance with the License. You may obtain a copy of
@@ -298,8 +299,15 @@ public class ServerRpcHandler implements Serializable {
         }
 
         if (!Version.getFullVersion().equals(widgetsetVersion)) {
-            getLogger().warning(String.format(Constants.WIDGETSET_MISMATCH_INFO,
-                    Version.getFullVersion(), widgetsetVersion));
+            if ("8.14.3".equals(widgetsetVersion)) {
+                getLogger().info("Yozons build of Vaadin 8 Framework version: "
+                        + Version.getFullVersion()
+                        + " is using 8.14.3 widgetset, which is compatible.");
+            } else {
+                getLogger().warning(
+                        String.format(Constants.WIDGETSET_MISMATCH_INFO,
+                                Version.getFullVersion(), widgetsetVersion));
+            }
         }
     }
 

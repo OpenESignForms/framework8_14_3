@@ -27,7 +27,7 @@ import javax.portlet.PortletMode;
 import javax.portlet.PortletURL;
 import javax.portlet.RenderResponse;
 import javax.portlet.ResourceURL;
-import jakarta.servlet.http.Cookie;
+import javax.servlet.http.Cookie;
 
 import org.w3c.dom.DOMException;
 import org.w3c.dom.Element;

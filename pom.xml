@@ -10,7 +10,7 @@
     <artifactId>vaadin-root</artifactId>
     <name>vaadin-root</name>
     <packaging>pom</packaging>
-    <version>8.15-SNAPSHOT</version>
+    <version>8.14.4</version>
 
     <prerequisites>
         <maven>3.1.0</maven>
@@ -27,7 +27,7 @@
         <liferay.portal-kernel.version>2.0.0</liferay.portal-kernel.version>
 
         <vaadin.gwt.version>2.8.2</vaadin.gwt.version>
-        <vaadin.plugin.version>8.15-SNAPSHOT</vaadin.plugin.version>
+        <vaadin.plugin.version>8.14.3</vaadin.plugin.version>
 
         <!-- Used in OSGi manifests -->
         <javax.validation.version>2.0.1.Final</javax.validation.version>
@@ -201,8 +201,8 @@
                 <version>3.0</version>
             </dependency>
             <dependency>
-                <groupId>jakarta.servlet</groupId>
-                <artifactId>jakarta.servlet-api</artifactId>
+                <groupId>javax.servlet</groupId>
+                <artifactId>javax.servlet-api</artifactId>
                 <version>3.0.1</version>
             </dependency>
             <dependency>
@@ -353,10 +353,10 @@
         </dependency>
         <dependency>
             <groupId>org.glassfish</groupId>
-            <artifactId>jakarta.el</artifactId>
+            <artifactId>javax.el</artifactId>
             <version>3.0.0</version>
             <scope>test</scope>
-        </dependency>	
+        </dependency>
     </dependencies>
     <build>
         <pluginManagement>
@@ -590,10 +590,10 @@
                 <module>client-compiler</module>
                 <module>client-compiled</module>
                 <module>themes</module>
-                <module>uitest</module>
-                <module>liferay</module>
-                <module>liferay-integration</module>
-                <module>osgi-integration</module>
+                <!--<module>uitest</module>-->
+                <!--<module>liferay</module>-->
+                <!--<module>liferay-integration</module>-->
+                <!--<module>osgi-integration</module>-->
                 <module>all</module>
                 <module>compatibility-server</module>
                 <module>compatibility-server-gae</module>
@@ -601,8 +601,8 @@
                 <module>compatibility-client-compiled</module>
                 <module>compatibility-shared</module>
                 <module>compatibility-themes</module>
-                <module>testbench-api</module>
-                <module>bom</module>
+                <!--<module>testbench-api</module>-->
+                <!--<module>bom</module>-->
             </modules>
         </profile>
         <profile>

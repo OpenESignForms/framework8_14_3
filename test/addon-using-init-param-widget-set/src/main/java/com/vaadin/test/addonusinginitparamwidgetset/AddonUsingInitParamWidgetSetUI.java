@@ -1,7 +1,7 @@
 package com.vaadin.test.addonusinginitparamwidgetset;
 
-import jakarta.servlet.annotation.WebInitParam;
-import jakarta.servlet.annotation.WebServlet;
+import javax.servlet.annotation.WebInitParam;
+import javax.servlet.annotation.WebServlet;
 
 import com.vaadin.annotations.VaadinServletConfiguration;
 import com.vaadin.contextmenu.ContextMenu;

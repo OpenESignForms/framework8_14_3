@@ -18,7 +18,7 @@ package com.vaadin.server;
 import java.util.Collections;
 import java.util.List;
 
-import jakarta.servlet.ServletException;
+import javax.servlet.ServletException;
 
 import com.vaadin.tests.util.MockDeploymentConfiguration;
 

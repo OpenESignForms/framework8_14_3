@@ -18,7 +18,7 @@ package com.vaadin.server.communication;
 
 import java.io.IOException;
 
-import jakarta.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpServletResponse;
 
 import com.vaadin.server.ServletPortletHelper;
 import com.vaadin.server.SessionExpiredHandler;

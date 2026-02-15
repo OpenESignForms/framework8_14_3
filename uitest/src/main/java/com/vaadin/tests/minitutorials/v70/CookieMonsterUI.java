@@ -1,6 +1,6 @@
 package com.vaadin.tests.minitutorials.v70;
 
-import jakarta.servlet.http.Cookie;
+import javax.servlet.http.Cookie;
 
 import com.vaadin.server.VaadinRequest;
 import com.vaadin.server.VaadinService;

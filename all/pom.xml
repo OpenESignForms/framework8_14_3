@@ -5,7 +5,7 @@
     <parent>
         <groupId>com.vaadin</groupId>
         <artifactId>vaadin-root</artifactId>
-        <version>8.15-SNAPSHOT</version>
+        <version>8.14.4</version>
     </parent>
     <artifactId>vaadin-all</artifactId>
     <name>vaadin-all</name>
@@ -74,11 +74,13 @@
             <version>${project.version}</version>
         </dependency>
 
+<!--
         <dependency>
             <groupId>${project.groupId}</groupId>
             <artifactId>vaadin-compatibility-themes</artifactId>
             <version>${project.version}</version>
         </dependency>
+-->
 
         <dependency>
             <groupId>${project.groupId}</groupId>
@@ -98,6 +100,7 @@
             <version>${project.version}</version>
         </dependency>
 
+<!--
         <dependency>
             <groupId>${project.groupId}</groupId>
             <artifactId>vaadin-osgi-integration</artifactId>
@@ -109,8 +112,10 @@
             <artifactId>vaadin-liferay-integration</artifactId>
             <version>${project.version}</version>
         </dependency>
+-->        
 
         <!-- Needed because referenced from javadocs -->
+<!--
         <dependency>
             <groupId>javax.portlet</groupId>
             <artifactId>portlet-api</artifactId>
@@ -122,6 +127,7 @@
             <version>${liferay.portal-service.version}</version>
             <scope>provided</scope>
         </dependency>
+-->        
     </dependencies>
 
     <build>

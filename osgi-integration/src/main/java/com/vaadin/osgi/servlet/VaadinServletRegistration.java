@@ -21,8 +21,8 @@ import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Objects;
 
-import jakarta.servlet.Servlet;
-import jakarta.servlet.annotation.WebServlet;
+import javax.servlet.Servlet;
+import javax.servlet.annotation.WebServlet;
 
 import org.osgi.framework.BundleContext;
 import org.osgi.framework.ServiceReference;

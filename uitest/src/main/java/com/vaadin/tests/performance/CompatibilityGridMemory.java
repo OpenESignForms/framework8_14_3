@@ -4,7 +4,7 @@ import java.util.List;
 import java.util.Optional;
 import java.util.function.Function;
 
-import jakarta.servlet.annotation.WebServlet;
+import javax.servlet.annotation.WebServlet;
 
 import com.vaadin.annotations.VaadinServletConfiguration;
 import com.vaadin.server.VaadinServlet;
